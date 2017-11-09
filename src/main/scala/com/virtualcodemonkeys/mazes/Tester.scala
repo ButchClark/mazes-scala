@@ -1,18 +1,17 @@
 package com.virtualcodemonkeys.mazes
 
+import scala.util.Random
+
 object Tester {
 
   def main(args: Array[String]): Unit = {
     println("Tester starting...")
 
-    val grid = new Grid(5, 9)
-    grid.prepareGrid()
-
-    println("getCell(2,1): %s".format(grid.getCell(2,1).toString))
-    println("getCell(2,111): %s".format(grid.getCell(2,111).toString))
-    println("getCell(222,0): %s".format(grid.getCell(222,0).toString))
-
+    val grid = new Grid(5, 5)
+//    println(grid.printGridWithCellNumbers())
+//    println("  ")
     println(grid.printGrid())
+
   }
 
 
