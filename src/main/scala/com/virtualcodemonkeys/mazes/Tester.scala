@@ -7,7 +7,7 @@ object Tester {
   def main(args: Array[String]): Unit = {
     println("Tester starting...")
 
-    val grid = new Grid(5, 5)
+    val grid = new Grid(15, 15)
 //    println(grid.printGridWithCellNumbers())
 //    println("  ")
     println(grid.printGrid())
