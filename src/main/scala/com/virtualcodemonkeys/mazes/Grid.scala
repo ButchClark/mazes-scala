@@ -70,12 +70,12 @@ case class Grid(rows: Int, columns: Int) {
     } else {
       if (rand.nextInt(100) >= 50) {
         cell.linked_east = true
-        println("Setting EAST link for cell( " + cell.row + ", " + cell.column + " )")
+//        println("Setting EAST link for cell( " + cell.row + ", " + cell.column + " )")
         if (getCell(cell.row, cell.column + 1) != None)
           getCell(cell.row, cell.column + 1).get.linked_west = true
       } else {
         cell.linked_south = true
-        println("Setting SOUTH link for cell( " + cell.row + ", " + cell.column + " )")
+//        println("Setting SOUTH link for cell( " + cell.row + ", " + cell.column + " )")
         if (getCell(cell.row + 1, cell.column) != None)
           getCell(cell.row + 1, cell.column).get.linked_north = true
       }
@@ -97,7 +97,7 @@ case class Grid(rows: Int, columns: Int) {
   }
 
   def printGrid(): String = {
-    println("> Entering printGrid() method")
+//    println("> Entering printGrid() method")
 
     var out = new StringBuilder
     out ++= "+" + "---+" * columnCount + "\n"
@@ -124,7 +124,7 @@ case class Grid(rows: Int, columns: Int) {
   }
 
   def printGridWithCellNumbers(): String = {
-    println("> Entering printGridWithCellNumbers() method")
+//    println("> Entering printGridWithCellNumbers() method")
 
     var out = new StringBuilder
     out ++= "+" + "---+" * columnCount + "\n"
