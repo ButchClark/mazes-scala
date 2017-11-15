@@ -1,4 +1,4 @@
-import com.virtualcodemonkeys.mazes.Grid
+import com.virtualcodemonkeys.mazes.{BinaryGrid, Grid}
 import org.scalatest.FunSpec
 
 class GridFunTest extends FunSpec{
@@ -6,7 +6,7 @@ class GridFunTest extends FunSpec{
   describe("A Grid"){
 
     describe("when initialized"){
-      val grid = new Grid(3,4)
+      val grid = new BinaryGrid(3,4)
 
       it("should have rowCount"){
         assert(grid.rowCount == 3)
